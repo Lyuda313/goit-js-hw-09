@@ -1,0 +1,2 @@
+const e=document.querySelector("[data-start]"),t=document.querySelector("[data-stop]"),r=document.querySelector("body");let a=null;e.addEventListener("click",(()=>{t.removeAttribute("disabled"),a=setInterval((()=>{const e=`#${Math.floor(16777215*Math.random()).toString(16)}`;r.style.backgroundColor=e}),1e3),e.setAttribute("disabled",!0)})),t.addEventListener("click",(()=>{e.removeAttribute("disabled"),clearInterval(a),alert("The timer has been stoppped already!"),t.setAttribute("disabled",!0)}));
+//# sourceMappingURL=01-color-switcher.cee2419e.js.map
